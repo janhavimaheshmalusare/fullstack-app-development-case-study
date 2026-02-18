@@ -1,0 +1,119 @@
+.users-page {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 15px;  
+  padding-bottom: 40px;
+}
+
+.users-glass-card {
+  width: 65%;
+  max-width: 900px;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 30px 40px;   
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+}
+
+.authorize-section {
+  margin-bottom: 25px;
+}
+
+.authorize-section h6 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.users-glass-card .MuiInputLabel-root {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.users-glass-card .MuiOutlinedInput-root {
+  color: #ffffff;
+}
+
+.users-glass-card .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.users-glass-card .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #ffffff;
+}
+
+.users-glass-card
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #4fc3f7;
+}
+
+.users-glass-card .MuiSelect-icon {
+  color: #ffffff;
+}
+
+.MuiMenu-paper {
+  background: #1f1f2e !important;
+  color: #ffffff !important;
+}
+
+.MuiMenuItem-root {
+  color: #ffffff !important;
+}
+
+.users-table {
+  margin-top: 15px;
+}
+
+.users-table .MuiTableHead-root {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.users-table .MuiTableCell-root {
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.users-table .MuiTableRow-root:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transition: 0.2s ease;
+}
+
+.users-table .MuiButton-root {
+  text-transform: none;
+  font-weight: 500;
+  color: #4fc3f7;
+}
+
+.users-table .MuiButton-root:hover {
+  background: rgba(79, 195, 247, 0.1);
+}
+
+.users-table .MuiButton-root[color="error"] {
+  color: #ff6b6b;
+}
+
+.users-table .MuiButton-root[color="error"]:hover {
+  background: rgba(255, 107, 107, 0.1);
+}
+
+.MuiDialog-paper {
+  background: #1f1f2e;
+  color: #ffffff;
+  border-radius: 16px;
+}
+
+.MuiDialogTitle-root {
+  color: #ffffff;
+}
+
+.MuiDialogContent-root {
+  color: #ffffff;
+}
+
+.MuiDialogActions-root {
+  padding: 16px 24px;
+}

@@ -1,0 +1,190 @@
+.kanban-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.kanban-board {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  height: calc(100vh - 180px);
+}
+
+.kanban-column {
+  flex: 1;
+  max-width: 240px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  box-shadow:
+    0 8px 28px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+
+  min-height: 0;
+}
+
+.kanban-column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.kanban-column-title {
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.kanban-count {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.kanban-column-content {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-right: 6px;
+}
+
+.kanban-card {
+  position: relative;
+  border-radius: 8px;
+  padding: 8px;
+  background: #fff9a8;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  word-break: break-word;
+}
+
+.kanban-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+.kanban-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 14px 14px 0;
+  border-style: solid;
+  border-color: transparent rgba(0, 0, 0, 0.08) transparent transparent;
+}
+
+.kanban-card .MuiCardContent-root {
+  padding: 8px !important;
+}
+
+.kanban-card-description {
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 6px;
+  white-space: normal;
+}
+
+.kanban-card-meta {
+  color: #333;
+  margin-bottom: 4px;
+  font-size: 11px;
+}
+
+.kanban-card-select {
+  margin: 6px 0 8px 0;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+.kanban-card-select .MuiOutlinedInput-root {
+  background: transparent !important;
+}
+
+.kanban-card-select .MuiSelect-select {
+  padding: 6px 8px !important;
+  font-size: 12px;
+  background: transparent !important;
+}
+
+.kanban-card-select .MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+.kanban-card-select .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+.kanban-card-select.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+.kanban-card-select .MuiSvgIcon-root {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.NEW .kanban-card { background: #fff9a8; }
+.NOT_STARTED .kanban-card { background: #c5f3ff; }
+.IN_PROGRESS .kanban-card { background: #ffd1dc; }
+.BLOCKED .kanban-card { background: #ffb3b3; }
+.COMPLETED .kanban-card { background: #c8f7c5; }
+
+.task-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  max-width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  outline: none;
+}
+
+.task-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.task-modal-description {
+  margin-bottom: 14px;
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.task-modal-meta {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 6px;
+}

@@ -1,0 +1,85 @@
+.dashboard-home {
+  padding: 40px 0;
+}
+
+.dashboard-card {
+  border-radius: 16px !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  transition: all 0.25s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+}
+
+.card-title {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 16px !important;
+  color: #ffffff;
+  text-align: center; 
+}
+
+.card-subtext {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 6px;
+  font-size: 0.92rem;
+}
+
+.view-button {
+  margin-top: 16px !important;
+  font-weight: 600 !important;
+  color: #c4b5fd !important;
+}
+
+.view-button:hover {
+  color: #e9d5ff !important;
+}
+
+.pie-wrapper {
+  margin-top: 10px;
+}
+
+.MuiTableCell-root {
+  color: rgba(255, 255, 255, 0.85) !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+@media (max-width: 900px) {
+  .dashboard-home {
+    padding: 24px 0;
+  }
+}
+
+.dashboard-grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.dashboard-grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.overdue-task {
+  color: #ef4444 !important;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .dashboard-grid-2x2,
+  .dashboard-grid-2col {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+

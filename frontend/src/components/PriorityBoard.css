@@ -1,0 +1,60 @@
+.priority-wrapper {
+  padding: 0 20px 10px 20px; 
+  margin-top: 0;
+}
+
+.priority-card {
+  position: relative;
+  border-radius: 6px;
+  background: #fff3a6;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.priority-card:nth-child(odd) {
+  transform: rotate(-0.5deg);
+}
+
+.priority-card:nth-child(even) {
+  transform: rotate(0.5deg);
+}
+
+.priority-card:hover {
+  transform: rotate(0deg) translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+}
+
+.priority-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 18px 18px 0;
+  border-style: solid;
+  border-color: transparent rgba(0, 0, 0, 0.08) transparent transparent;
+}
+
+.priority-description {
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #222;
+  line-height: 1.4;
+}
+
+.priority-meta {
+  color: #444;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.priority-date {
+  font-size: 11px;
+  font-weight: 600;
+  color: #b00020;
+  margin-top: 6px;
+}

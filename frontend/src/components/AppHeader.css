@@ -1,0 +1,94 @@
+.app-header {
+  background: rgba(15, 15, 30, 0.35) !important;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  font-family: 'EB Garamond', Garamond, serif;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 0 80px; 
+  min-height: 80px;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 22px; 
+  letter-spacing: 0.8px;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.nav-container {
+  display: flex;
+  gap: 48px; 
+  margin-left: 80px;  
+}
+
+.nav-button {
+  font-family: 'EB Garamond', Garamond, serif !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  text-transform: none !important;
+  font-weight: 500 !important;
+  font-size: 17px !important; 
+  letter-spacing: 0.4px;
+  padding: 6px 0 !important;
+  transition: all 0.25s ease;
+}
+
+.nav-button:hover {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.nav-button.active {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  position: relative;
+}
+
+.nav-button.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 2px;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 40px; 
+}
+
+.user-info {
+  font-family: 'EB Garamond', Garamond, serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.logout-button {
+  font-family: 'EB Garamond', Garamond, serif !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  text-transform: none !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  padding: 6px 22px !important;
+  border-radius: 24px !important;
+  transition: all 0.25s ease;
+}
+
+.logout-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}

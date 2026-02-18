@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+.login-background {
+  position: fixed;
+  inset: 0;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 64px;
+  overflow: hidden;
+}
+
+.login-card {
+  width: 340px;
+  padding: 28px;
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.login-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+
+  color: #7c3aed;
+}
+
+.login-input .MuiOutlinedInput-root {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.login-input .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.login-input .MuiInputLabel-root {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.login-button {
+  margin-top: 20px !important;
+  padding: 10px !important;
+  font-weight: 600 !important;
+
+  background-color: #7c3aed !important;
+  box-shadow: none !important;
+}
+
+.login-button:hover {
+  background-color: #6d28d9 !important;
+}
+
+@media (max-width: 768px) {
+  .login-background {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .login-card {
+    width: 90%;
+    max-width: 340px;
+  }
+}

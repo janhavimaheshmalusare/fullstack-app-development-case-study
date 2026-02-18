@@ -1,0 +1,62 @@
+.tasks-glass {
+  padding: 30px !important;
+  margin-bottom: 50px !important;
+
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px !important;
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.tasks-subtitle {
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.tasks-glass .MuiInputBase-input {
+  color: #ffffff;
+}
+
+.tasks-glass .MuiInputLabel-root {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.tasks-glass .MuiSvgIcon-root {
+  color: #ffffff;
+}
+
+.tasks-glass .MuiOutlinedInput-root {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.tasks-glass .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.tasks-glass .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.tasks-glass .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #90caf9;
+}
+
+.tasks-glass .MuiTableCell-root {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.tasks-glass .MuiTableHead-root .MuiTableCell-root {
+  font-weight: 600;
+}
+
+.tasks-glass .MuiButton-root {
+  text-transform: none;
+  font-weight: 500;
+}
