@@ -2,6 +2,8 @@
 .env.*
 !.env.example
 !.env.sample
+backend/.env
+
 
 node_modules/
 **/node_modules/
